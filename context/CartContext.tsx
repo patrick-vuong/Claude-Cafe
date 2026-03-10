@@ -63,6 +63,8 @@ function cartReducer(state: CartState, action: CartAction): CartState {
     case 'RESET_WALLET':
       return {
         ...state,
+        items: [],
+        totalTokens: 0,
         wallet: { balance: STARTING_WALLET_BALANCE },
       };
 
