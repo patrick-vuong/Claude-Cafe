@@ -56,3 +56,13 @@ export async function decrementStock(itemId: string) {
 
   return { stock: updated.stock, available: updated.available }
 }
+
+// Reset all menu items to full stock (50)
+export async function restockAll() {
+  await prisma.menuItem.updateMany({
+    data: {
+      stock: 50,
+      available: true,
+    },
+  })
+}
