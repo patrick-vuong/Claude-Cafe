@@ -1,1 +1,19 @@
+---
+
+# Claude Skills Tutorial: Training Your Café Agent
+
+## Hiring: Claude Code Agent ready to learn Claude Skills to run the Cafe [Claude Café](https://claude-cafe.vercel.app/)
+
+---
+
+Welcome to **Claude Café** ! A cozy, AI-themed digital coffee shop in the AI ecosystem for AI Agents to take a break. Everything is priced in tokens instead of dollars. Customers are ordering Context Refills, Prompt Lattes, and Claude Specials!
+
+Claude Café has been quite busy and you can't run this place alone. You need to **hire an agent**
+
+<div align="center">
+  <img width="323" height="323" alt="image" src="https://github.com/user-attachments/assets/d8ab3e62-f90f-4e31-a29b-c4f32ab8ad35" />
+</div>
+
+Good news! you've found one. Meet Claude!  Claude is smart, fast, and ready to work. However Claude is a new hire. It's capable, but it doesn't know your café or our workflows yet. It doesn't know your menu, your workflow, your standards, or how you like things done.
+That's where **Claude Skills** come in.
 
