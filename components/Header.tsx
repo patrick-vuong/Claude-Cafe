@@ -48,6 +48,14 @@ export default function Header() {
             >
               Menu
             </Link>
+            <a
+              href="https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-espresso hover:text-coral transition-colors font-medium text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-coral focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded"
+            >
+              Build Skills for Claude Tutorial
+            </a>
             <TokenWallet />
             <CartIcon />
           </nav>
@@ -87,6 +95,15 @@ export default function Header() {
             >
               Menu
             </Link>
+            <a
+              href="https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="block text-espresso hover:text-coral transition-colors font-medium py-2"
+            >
+              Build Skills for Claude Tutorial
+            </a>
             <Link
               href="/cart"
               onClick={() => setMenuOpen(false)}

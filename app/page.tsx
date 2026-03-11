@@ -33,6 +33,19 @@ export default async function Home() {
               </span>{' '}
               tokens to spend
             </p>
+            <div className="flex flex-col items-center gap-3 mt-2">
+              <h2 className="font-display text-2xl sm:text-3xl text-espresso">
+                Building Skills for Claude Tutorial
+              </h2>
+              <a
+                href="https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-coral text-offwhite px-8 py-3 rounded-lg font-semibold text-lg hover:bg-amber transition-colors"
+              >
+                Claude Cafe is Hiring
+              </a>
+            </div>
           </div>
         </div>
       </section>
