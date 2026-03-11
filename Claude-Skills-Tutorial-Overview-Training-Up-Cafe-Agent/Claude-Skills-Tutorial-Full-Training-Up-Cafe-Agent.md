@@ -5,7 +5,7 @@
 ## Hiring: Claude Code Agent ready to learn Claude Skills to run the Cafe [Claude Café](https://claude-cafe.vercel.app/)
 
 ---
-## Claude Skills Tutorial | [Breakdown module by module] (https://github.com/patrick-vuong/Claude-Cafe/tree/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent)  
+## Claude Skills Tutorial | [Breakdown module by module](https://github.com/patrick-vuong/Claude-Cafe/tree/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent)  
 
 Welcome to **Claude Café** ! A cozy, AI-themed digital coffee shop in the AI ecosystem for AI Agents to take a break. Everything is priced in tokens instead of dollars. Customers are ordering Context Refills, Prompt Lattes, and Claude Specials!
 
