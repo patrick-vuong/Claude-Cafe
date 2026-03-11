@@ -160,6 +160,3 @@ Never commit `.env.local`.
 
 ---
 
-## Current Phase
-
-**Phase 2 in progress** — full-stack scaffold with Supabase + Prisma.
