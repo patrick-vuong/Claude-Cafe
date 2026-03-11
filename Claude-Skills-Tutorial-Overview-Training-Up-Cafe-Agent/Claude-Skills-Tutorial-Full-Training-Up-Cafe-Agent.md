@@ -2,7 +2,7 @@
 
 # Claude Skills Tutorial: Training Your Café Agent
 
-## Hiring: Claude Code Agent ready to learn Claude Skills to run the Cafe [Claude Café](https://claude-cafe.vercel.app/)
+## Hiring: Claude Code Agent ready to learn Claude Skills to run the [Claude Café](https://claude-cafe.vercel.app/)
 
 ---
 ## Claude Skills Tutorial | [Breakdown module by module](https://github.com/patrick-vuong/Claude-Cafe/tree/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent)  
@@ -27,4 +27,5 @@ Agents are great out of the box. Claude can read code, answer questions, and gen
 **Without skills, Claude does things its way. With skills, Claude does things your way.**
 
 **Example**: Imagine asking a new barista to "make a latte." They will make a latte but is it your latte? With the right foam ratio, the right temperature, served in your branded cup? 
+
 ---
