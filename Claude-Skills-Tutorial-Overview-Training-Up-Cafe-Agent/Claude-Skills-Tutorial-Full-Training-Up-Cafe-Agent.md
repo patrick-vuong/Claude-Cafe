@@ -3,7 +3,7 @@
 # Claude Skills Tutorial: Training Your Café Agent
 
 ## Hiring: Claude Code Agent ready to learn Claude Skills to run the [Claude Café](https://claude-cafe.vercel.app/)
-### Navigate to Setup | Module 1 | Module 2 | Module 3
+### Navigate to [Setup](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md#setup-preparing-for-agent-training) | Module 1 | Module 2 | Module 3
 
 ---
 ## Claude Skills Tutorial | [Breakdown module by module](https://github.com/patrick-vuong/Claude-Cafe/tree/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent)  
