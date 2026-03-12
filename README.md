@@ -36,7 +36,7 @@ nod to how LLMs actually think about cost.
 **After** | Agents trained up with skills will execute in a repeatable, predictable, and referencing the best practices just like the outcome of training an employee
 
 ### Simplifying Complex Concepts: 
-New Employee Claude has a Kitchen (Model Context Protocal) & Recipe (Skills) to work efficiently with Agentic Workflows
+New Employee Claude has a Kitchen (Model Context Protocol) & Recipe (Skills) to work efficiently with Agentic Workflows
 
 We treat Claude Code like a **AI teammate** as we have gone from pair programming to peer programming. What makes a productive is software development lifecycle are the developer tools  that help us go about different tasks ex. testing with Playwright. 
 
