@@ -1,12 +1,12 @@
 ---
 
-# Claude Skills Tutorial: Training Your Café Agent
+# Teaching skills to Claude Tutorial: Training Your Café Agent
 
-## Hiring: Claude Code Agent ready to learn Claude Skills to run the [Claude Café](https://claude-cafe.vercel.app/)
+## Hiring: Claude Code Agent ready to learn skills to run the [Claude Café](https://claude-cafe.vercel.app/)
 ### Navigate to [Setup](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md#setup-preparing-for-agent-training) | [Module 1](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md#module-1-learn-the-cafe) | [Module 2](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md#module-2-cooking-in-the-kitchen--model-context-protocol-tools) | [Module 3](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md#module-3-cafe-agent-master--putting-it-together-for-life-long-repeatable-skills--kitchen-mcp--recipes-skills)
 
 ---
-## Claude Skills Tutorial |   
+## Teaching skills to Claude Tutorial   
 
 Welcome to **Claude Café** ! A cozy, AI-themed digital coffee shop in the AI ecosystem for AI Agents to take a break. Everything is priced in tokens instead of dollars. Customers are ordering Context Refills, Prompt Lattes, and Claude Specials!
 
@@ -18,7 +18,7 @@ Claude Café has been quite busy and you can't run this place alone. You need to
 
 
 Good news! you've found one. Meet Claude!  Claude is smart, fast, and ready to work. However Claude is a new hire. It's capable, but it doesn't know your café or our workflows yet. It doesn't know your menu, your workflow, your standards, or how you like things done.
-That's where **Claude Skills** come in.
+That's where **Claude with skills** come in.
 
 ---
 ## Training Manual - Extend Claude with skills
@@ -54,6 +54,7 @@ Agents are great out of the box. Claude can read code, answer questions, and gen
 ### Clone and Open Claude Cafe Repo in VS Code
 •	Open Command Palette: CTRL+Shift+P (Windows/Linux) or CMD+Shift+P (macOS) 
 <img width="481" height="66" alt="image" src="https://github.com/user-attachments/assets/fb8eef37-5a0c-4877-9143-e56408c94d82" />
+
 
 
 •	Type Git: Clone and paste the repo [https://github.com/patrick-vuong/Claude-Cafe.git](https://github.com/patrick-vuong/Claude-Cafe.git)
@@ -162,7 +163,7 @@ Use explain-code skill and show me how this app works
 ---
 
 # Module 2: Cooking in the Kitchen | Model Context Protocol Tools
-## A great cafe has a great Kitchen and recipes
+## A great cafe has a great Kitchen and Recipes
 ### The Kitchen (Model Context Protocol) & Recipe (Skills) Analogy 
 We treat Claude Code like a **AI teammate** as we have gone from pair programming to peer programming. What makes a productive is software development lifecycle are the developer tools  that help us go about different tasks ex. testing with (Playwright tool)[https://playwright.dev/]. 
 
