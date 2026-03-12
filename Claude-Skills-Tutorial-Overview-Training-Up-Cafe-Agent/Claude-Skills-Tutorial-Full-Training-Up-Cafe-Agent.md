@@ -120,6 +120,7 @@ SKILL.md
 ```
 <img width="218" height="82" alt="image" src="https://github.com/user-attachments/assets/732d3b78-2999-433d-85f1-42c021556a0a" />
 
+
 **Create the skill file**
 ```markdown name=.claude/skills/explain-code/SKILL.md
 ---
