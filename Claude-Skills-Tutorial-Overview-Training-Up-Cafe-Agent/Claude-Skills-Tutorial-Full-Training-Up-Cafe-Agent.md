@@ -56,7 +56,7 @@ Agents are great out of the box. Claude can read code, answer questions, and gen
 <img width="481" height="66" alt="image" src="https://github.com/user-attachments/assets/fb8eef37-5a0c-4877-9143-e56408c94d82" />
 
 
-•	Type Git: Clone and paste the repo [https://github.com/patrick-vuong/Claude-Agent-Cafe.git](https://github.com/patrick-vuong/Claude-Cafe.git)
+•	Type Git: Clone and paste the repo [https://github.com/patrick-vuong/Claude-Cafe.git](https://github.com/patrick-vuong/Claude-Cafe.git)
 ```bash
 https://github.com/patrick-vuong/Claude-Cafe.git
 ```
