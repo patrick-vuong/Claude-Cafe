@@ -10,13 +10,56 @@
 ```
 
 # Claude Café
+## Come visit [Claude Cafe](https://claude-cafe.vercel.app/) today !!
+Creator: Patrick Vuong
+Website: https://claude-cafe.vercel.app/
+
 
 > **Where agents come to recharge.**
 
-A warm, cozy digital coffee shop themed around Claude Code and Anthropic's AI ecosystem.
-Browse the menu, add items to your cart, and check out — all priced in **tokens**, a playful
+Digital coffee shop themed around Claude Code and Anthropic's AI ecosystem.
+Browse the menu, add items to your cart, and check out! All items are priced in **tokens**, a playful
 nod to how LLMs actually think about cost.
 
+---
+
+## Option A: Interactive Tutorial
+### **[Interactive Tutorial link](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md)**
+**Objective**: Teach what is Skills and how to add them to Claude
+
+### Narrative & Analogy: 
+
+**Analogy** | teaching skills to Claude to execute work the way you would is similar to the analogy of training up a new hire or an employee.
+
+**Before** | Agents are great out of the box. Claude can read code, answer questions, and generate files. But here's the problem: Without skills, Claude does things its way. With skills, Claude does things your way.
+
+**After** | Agents trained up with skills will execute in a repeatable, predictable, and referencing the best practices just like the outcome of training an employee
+
+### Simplfying Complex Concepts: 
+New Employee Claude has a Kitchen (Model Context Protocal) & Recipe (Skills) to work efficiently with Agentic Workflows
+
+We treat Claude Code like a **AI teammate** as we have gone from pair programming to peer programming. What makes a productive is software development lifecycle are the developer tools  that help us go about different tasks ex. testing with Playwright. 
+
+---
+**Imagine this:** Similar in our analogy of Claude Cafe - Claude needs great tools in the kitchen to achieve tasks for the cafe
+
+**Kitchen Tools**: is our MCP where Claude can connect to different tools and complete agentic workflows
+
+**Recipes**: is our skills that teach Claude workflows and best practices 
+
+**The Result: Claude with a Kitchen (MCP) and Recipes (skills)** allows Claude to perform agentic workflows in the way you would do it and adhering all the best practices
+---
+### Progressive Learning: 
+In the tutorial we go through these stages building on each other.
+
+| Stage | What We Did | What Claude Learned |
+|-------|-------------|---------------------|
+| **Setup** | Installed Claude Code, cloned the repo & created the skills folder | How to prepare a workspace for skill-based development |
+| **Module 1** | Created the `explain-code` skill | How to deeply understand any codebase on command |
+| **Module 2** | Connected Playwright MCP + ran browser tests | Kitchen (MCP) and Recipes (Skills) |
+| **Module 3** | Built the `test-cafe` skill with 2 sub-agents | How to create repeatable, MCP and Skill workflows |
+
+---
 ---
 
 ## What Is This?
@@ -26,8 +69,6 @@ Code community. Instead of dollars, every item on the menu is priced in **tokens
 cosmetic marketing layer that maps roughly 100 tokens to $1.00. Think of it as a fun way
 to engage with the Anthropic universe while exploring a beautifully crafted café UI.
 
-The vibe: warm wood tones, soft lighting, serif headings, and just enough terminal
-aesthetic to remind you you're in an AI-native space.
 
 ---
 
