@@ -93,5 +93,56 @@ how does this app work
 
 Let's give Claude a training manual for understanding codebases. **Create a new skill**
 
+**Setup the skill: in VS Code create a new folder in the file explorer**
 
+Lets start with the parent folder and call it **.claude**
+```bash
+.claude
+```
 
+Then within the .claude folder create another folder and call it **skills**
+```bash
+skills
+```
+
+Then within the skills folder you create another folder that is the **NAME** of the skill in this case **explain-code**
+
+```bash
+explain-code
+```
+
+Finally within the **explain-code** folder we can add a **SKILL.md** file
+```bash
+SKILL.md
+```
+<img width="218" height="82" alt="image" src="https://github.com/user-attachments/assets/732d3b78-2999-433d-85f1-42c021556a0a" />
+
+**Create the skill file**
+```markdown name=.claude/skills/explain-code/SKILL.md
+---
+name: "explain-code"
+description: "Thoroughly explain how a codebase works with deep architectural detail"
+trigger: "on-command"
+---
+
+# Explain Code Skill
+
+When asked to explain how an app or codebase works, follow this structured approach:
+
+## Steps
+
+1. **Identify the framework and tech stack** — Read `package.json`, config files, and the project structure
+2. **Map the architecture** — Identify the routing pattern, state management, and data flow
+3. **Walk through each major feature** — For each page/feature, explain:
+   - What component renders it
+   - What data it uses
+   - How state flows in and out
+4. **Explain the data model** — Types, interfaces, and how data is structured
+5. **Describe the user journey** — Walk through the app as a user would experience it
+6. **Highlight patterns and decisions** — Why was it built this way? What patterns are used?
+
+## Output Format
+
+Use clear headings, code references with file paths, and a logical flow from high-level architecture down to implementation details.
+```
+**Response:** A very detailed response. This is how you can craft a strong prompt and use a skill to ensure to ensure that the agent always responds this way. Just like training an employee to become a master Cafe owner.
