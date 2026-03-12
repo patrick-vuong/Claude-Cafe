@@ -6,7 +6,7 @@
 ### Navigate to [Setup](https://github.com/patrick-vuong/Claude-Cafe/blob/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent/Claude-Skills-Tutorial-Full-Training-Up-Cafe-Agent.md#setup-preparing-for-agent-training) | Module 1 | Module 2 | Module 3
 
 ---
-## Claude Skills Tutorial | [Breakdown module by module](https://github.com/patrick-vuong/Claude-Cafe/tree/main/Claude-Skills-Tutorial-Overview-Training-Up-Cafe-Agent)  
+## Claude Skills Tutorial |   
 
 Welcome to **Claude Café** ! A cozy, AI-themed digital coffee shop in the AI ecosystem for AI Agents to take a break. Everything is priced in tokens instead of dollars. Customers are ordering Context Refills, Prompt Lattes, and Claude Specials!
 
@@ -161,7 +161,7 @@ Use explain-code skill and show me how this app works
 
 ---
 
-# Module 2: Cooking in the Kitchen
+# Module 2: Cooking in the Kitchen | Model Context Protocal Tools
 ## A great cafe has a great Kitchen and recipes
 ### The Kitchen (Model Context Protocal) & Recipe (Skills) Analogy 
 We treat Claude Code like a **AI teammate** as we have gone from pair programming to peer programming. What makes a productive is software development lifecycle are the developer tools  that help us go about different tasks ex. testing with (Playwright tool)[https://playwright.dev/]. 
@@ -173,10 +173,6 @@ Agents like Claude are extensible as we can connect tools for Claude to use via 
 
 •	**Recipes**: is our skills that teach Claude workflows and best practices 
 
-•	**Without each other**: it just becomes equipment with no direction and recipes with no tools
-
-•	**The Result: Claude with a Kitchen (MCP) and Recipes (skills)** allows Claude to perform agentic workflows in the way you would do it and adhering all the best practices
-
 ---
 
 ### Step 1: Lets get some tools ! Setup the Playwright MCP Server
@@ -184,13 +180,26 @@ Agents like Claude are extensible as we can connect tools for Claude to use via 
 
 Add the Playwright MCP server to your Claude Code configuration: So that we can use it. Enter the below in the terminal
 
+Windows:
 ```bash
-claude mcp add playwright npx @playwright/mcp@latest
+claude mcp add playwright cmd /c npx @playwright/mcp@latest --browser chromium
 ```
 
-Start a new session for playwright to load
+For Windows if it doesn't work then manually edit the .mcp.json in the.claude file
 ```
-/clear
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "cmd",
+      "args": ["/c", "npx", "@playwright/mcp@latest", "--browser", "chromium"]
+    }
+  }
+}
+```
+Mac/Linux
+
+```bash
+claude mcp add playwright npx @playwright/mcp@latest --browser chromium
 ```
 
 ### Step 2: Lets explore our tools ! Learn about Playwright MCP Server
@@ -205,9 +214,124 @@ What can Playwright MCP do?
 
 Lets do some testing on our website. Prompt Claude: 
 ```
-Can you use the Playwright MCP tool to test the shopping experience (Add item + Checkout). Make it a single agent and make it headed so I can see it.
+Can you use the Playwright MCP tool to test the shopping experience (Add item + Checkout).
 ```
 
+As you can see Playwright is taking screenshots of the actions while the user can see the testing on the website !
+<img width="1147" height="767" alt="image" src="https://github.com/user-attachments/assets/56882025-f8af-4afa-bc94-9551c726d400" />
+
+A Testing Report of everything that was done
+<img width="907" height="642" alt="image" src="https://github.com/user-attachments/assets/d1ba0eff-adca-45bc-93e8-6d9258d30542" />
+
+---
+
+# Module 3: Cafe Agent Master | Putting it together for life long repeatable skills | Kitchen (MCP) + Recipes (Skills)
+
+•	**The Result: Claude with a Kitchen (MCP) and Recipes (skills)** allows Claude to perform agentic workflows in the way you would do it and adhering all the best practices
+
+•	**Without each other**: it just becomes equipment with no direction and recipes with no tools
+
+---
+
+## Time to put MCP and Skills together. A single command that spins up 2 subagents to test the entire cafe
+
+### Step 1: Create the Skill
+Create the skill folder and file: .claude/skills/test-cafe
+
+Lets start with the parent folder and call it **.claude**
+```bash
+.claude
+```
+
+Then within the .claude folder create another folder and call it **skills**
+```bash
+skills
+```
+
+Then within the skills folder you create another folder that is the **NAME** of the skill in this case **test-cafe**
+
+```bash
+test-cafe
+```
+
+Finally within the **test-cafe** folder we can add a **SKILL.md** file
+```bash
+SKILL.md
+```
+
+**For the SKILL.md here is the detail for test-cafe:**
+
+````
+---
+name: "test-cafe"
+description: "Run comprehensive tests on Claude Café using two sub-agents: shopping flow and QA"
+---
+
+# Test the Café Skill
+
+The dev server runs at http://localhost:3000. Use the Playwright MCP tool to run a full test suite against Claude Café with two sub-agents.
+
+## Sub-Agent 1: Shopping Experience 
+
+Test the complete customer journey:
+- Navigate to the café and verify all 5 menu categories load
+- Add an item to cart and confirm the token wallet balance updates
+- Complete checkout and verify the order confirmation screen shows a unique order ID
+
+## Sub-Agent 2: QA & Responsiveness 
+
+Test UI quality:
+- Verify all navigation links and buttons work (Home, Menu, Cart, category tabs, add/remove items)
+- Test layout at mobile (375x667), tablet (768x1024), and desktop (1440x900) viewports
+- Check for console errors and verify all assets load
+
+## Output Format
+
+Present results as a table:
+
+| Agent | Test | Status | Notes |
+|-------|------|--------|-------|
+|  Shopping | Browse menu | ✅/❌ | ... |
+|  QA | Mobile layout | ✅/❌ | ... |
+
+End with a summary: total tests, passed, failed, and any critical issues.
+````
+
+### Step 2: Test Cafe
+
+Prompt Claude with:
+
+```
+Use the test-cafe skill to test Claude Café
+```
+
+The 2 sub agents at work:
+
+
+<img width="713" height="496" alt="image" src="https://github.com/user-attachments/assets/d16898d0-b7b2-470e-84cf-4cde5e5b57d4" />
+
+
+**Final Results:**
+
+<img width="700" height="519" alt="image" src="https://github.com/user-attachments/assets/fb8fd5fb-3215-4eaf-b499-c0f465d50325" />
+
+---
+# CONCLUSION: From New Hire to Café Master
+
+Let's look at the journey we just took:
+
+| Stage | What We Did | What Claude Learned |
+|-------|-------------|---------------------|
+| **Setup** | Installed Claude Code, cloned the repo & created the skills folder | How to prepare a workspace for skill-based development |
+| **Module 1** | Created the `explain-code` skill | How to deeply understand any codebase on command |
+| **Module 2** | Connected Playwright MCP + ran browser tests | Kitchen (MCP) and Recipes (Skills) |
+| **Module 3** | Built the `test-cafe` skill with 2 sub-agents | How to create repeatable, MCP and Skill workflows |
+
+<div align="center">
+  <img width="323" height="323" alt="image" src="https://github.com/user-attachments/assets/cb51fbc0-c948-41f2-9a72-23c8b957d22f" />
+</div>
+
+## Have a great day at Claude Cafe ! Claude you are hired !!
 
 
 
