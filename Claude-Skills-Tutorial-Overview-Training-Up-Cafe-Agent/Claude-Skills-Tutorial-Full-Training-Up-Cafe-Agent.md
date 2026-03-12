@@ -158,3 +158,56 @@ Use explain-code skill and show me how this app works
 
 
 **Response:** A very detailed response. This is how you can craft a strong prompt and use a skill to ensure to ensure that the agent always responds this way. Just like training an employee to become a master Cafe owner.
+
+---
+
+# Module 2: Cooking in the Kitchen
+## A great cafe has a great Kitchen and recipes
+### The Kitchen (Model Context Protocal) & Recipe (Skills) Analogy 
+We treat Claude Code like a **AI teammate** as we have gone from pair programming to peer programming. What makes a productive is software development lifecycle are the developer tools  that help us go about different tasks ex. testing with (Playwright tool)[https://playwright.dev/]. 
+
+Agents like Claude are extensible as we can connect tools for Claude to use via **Model Context Protocal (MCP)**. **MCP** is a open standard that allows Claude to leverage tools to gain new capabilities.
+
+### **Imagine this:** Similar in our analogy of Claude Cafe - Claude needs great tools in the kitchen to achieve tasks for the cafe
+•	**Kitchen Tools**: is our MCP where Claude can connect to different tools and complete agentic workflows
+
+•	**Recipes**: is our skills that teach Claude workflows and best practices 
+
+•	**Without each other**: it just becomes equipment with no direction and recipes with no tools
+
+•	**The Result: Claude with a Kitchen (MCP) and Recipes (skills)** allows Claude to perform agentic workflows in the way you would do it and adhering all the best practices
+
+---
+
+### Step 1: Lets get some tools ! Setup the Playwright MCP Server
+**Every Developer needs to do testing.** [Playwright MCP](https://github.com/microsoft/playwright-mcp) gives Claude the ability to **control a real web browser and perform end to end testing** for example click buttons, fill forms, navigate pages, take screenshots, and verify UI behavior.
+
+Add the Playwright MCP server to your Claude Code configuration: So that we can use it. Enter the below in the terminal
+
+```bash
+claude mcp add playwright npx @playwright/mcp@latest
+```
+
+Start a new session for playwright to load
+```
+/clear
+```
+
+### Step 2: Lets explore our tools ! Learn about Playwright MCP Server
+
+Playwright MCP can test a ton of pieces. Prompt Claude to see what Playwright can do: 
+
+```
+What can Playwright MCP do?
+```
+
+### Step 3: Use the Playwright MCP Server
+
+Lets do some testing on our website. Prompt Claude: 
+```
+Can you use the Playwright MCP tool to test the shopping experience (Add item + Checkout). Make it a single agent and make it headed so I can see it.
+```
+
+
+
+
