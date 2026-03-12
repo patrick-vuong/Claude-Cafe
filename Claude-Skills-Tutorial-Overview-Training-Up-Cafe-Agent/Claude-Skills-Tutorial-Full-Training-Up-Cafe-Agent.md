@@ -76,3 +76,22 @@ claude
 
 ---
 
+# Module 1: Learn the Cafe
+## Before you manage the counter, you need to learn the shop
+### Step 1: Ask Claude Without a Skill
+
+Open Claude Code in VS Code's terminal and prompt:
+
+```
+how does this app work
+```
+**Response:** A decent overview covering that is a Next.JS app with a Supabase PostgreSQL backend. High level User flow and some key mechanics.
+
+**Claude without skills:** It's like asking your new hire "what does our café do?" and they say "we sell coffee, pastries to agents." This is all true but with a skill we could get a very rich answer.
+
+### Step 2: Create the "Explain Code" Skill
+
+Let's give Claude a training manual for understanding codebases. **Create a new skill**
+
+
+
