@@ -135,6 +135,23 @@ warmgray:  #8B7355   ← muted text / labels
 
 ---
 
+## Testing
+
+Playwright MCP is configured and available for browser-based testing.
+
+**When to use Playwright MCP:**
+- Verifying UI changes look correct after edits
+- Testing user flows (e.g. add item → cart → checkout)
+- Debugging layout or interaction issues
+- Taking screenshots to confirm visual output
+
+**Dev server URL:** `http://localhost:3000`
+
+Always ensure `npm run dev` is running before launching Playwright tests.
+Use `--headed` mode (already configured in `.mcp.json`) so tests are visible.
+
+---
+
 ## How to Run
 
 ```bash

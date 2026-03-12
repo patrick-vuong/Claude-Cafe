@@ -45,6 +45,53 @@ A running log of issues, architectural insights, and design decisions encountere
 
 ---
 
+## 17. Playwright MCP Not Connecting on Windows (Phase 6+)
+
+**Problem:** The Playwright MCP server (`@playwright/mcp@latest`) is configured in `.mcp.json` but its tools (`browser_navigate`, `browser_click`, etc.) never appear in Claude Code's tool list, even after multiple restarts.
+
+**Root Cause:** On Windows, `npx` launches through `cmd /c npx ...`, adding process indirection. The initial `--headed` flag caused connection issues — the MCP server would start but Claude Code couldn't complete the stdio handshake before the process timed out. This is a known friction point with MCP servers on Windows where browser launch adds startup latency.
+
+**What was tried (chronologically):**
+1. `cmd /c npx @playwright/mcp@latest --headed` — tools never appeared despite npx working in terminal
+2. Restarting Claude Code multiple times, verifying `npx @playwright/mcp@latest --version` (v0.0.68)
+3. Installing locally (`npm install -D @playwright/mcp`) and invoking via `node node_modules/@playwright/mcp/cli.js --headed` — this worked but bypassed npx entirely
+
+**Working fix (current):** Use `npx` but specify `--browser chromium` instead of `--headed`:
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "cmd",
+      "args": ["/c", "npx", "@playwright/mcp@latest", "--browser", "chromium"]
+    }
+  }
+}
+```
+The `--browser chromium` flag explicitly selects the browser engine and launches in headed mode by default. This avoids the startup timing issues that `--headed` alone caused.
+
+**Alternative fix (if npx still flakes):** Install locally and bypass npx:
+```bash
+npm install -D @playwright/mcp
+```
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "node",
+      "args": ["node_modules/@playwright/mcp/cli.js", "--headed"]
+    }
+  }
+}
+```
+
+**Prevention:**
+- After adding any new MCP server, immediately run `/mcp` in Claude Code to verify it connected — don't assume it worked
+- On Windows, if `npx`-based MCP servers fail to connect, try specifying the browser explicitly (`--browser chromium`) or install locally and use `node` directly
+- Keep MCP dependencies in `devDependencies` so they're tracked in `package.json`
+- Test the full flow (navigate → snapshot → click → checkout) after any MCP config change to confirm tools actually work end-to-end
+
+---
+
 # Architectural Insights
 
 ## 4. Single Context for Cart + Wallet (Phase 4)
