@@ -68,6 +68,10 @@ claude
 
 <img width="1392" height="265" alt="image" src="https://github.com/user-attachments/assets/cb08e15e-117e-4ed3-90a2-6f9049d03033" />
 
+### Enable Skills in VS Code
+•	Go to settings -> type in skill -> enable **Chat: Use Agent Skills + Chat: Use Nested Agents Md Files**
+<img width="623" height="457" alt="image" src="https://github.com/user-attachments/assets/0357325d-dd71-41bf-986e-ba3d5a91cee2" />
+
 
 ---
 
