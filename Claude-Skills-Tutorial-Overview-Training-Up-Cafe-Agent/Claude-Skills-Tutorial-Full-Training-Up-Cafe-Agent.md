@@ -28,7 +28,9 @@ Agents are great out of the box. Claude can read code, answer questions, and gen
 
 **Without skills, Claude does things its way. With skills, Claude does things your way.**
 
-**Example**: Imagine asking a new barista to "make a latte." They will make a latte but is it your latte? With the right foam ratio, the right temperature, served in your branded cup? 
+**Example**: Imagine asking a new barista to "make a latte." They will make a latte but is it your latte? With the right foam ratio, the right temperature, served in your branded cup?
+
+**Reference:** Extend Claude with [Skills](https://code.claude.com/docs/en/skills)
 
 ---
 ## Setup: Preparing for Agent Training
@@ -122,7 +124,6 @@ SKILL.md
 ---
 name: "explain-code"
 description: "Thoroughly explain how a codebase works with deep architectural detail"
-trigger: "on-command"
 ---
 
 # Explain Code Skill
@@ -131,18 +132,29 @@ When asked to explain how an app or codebase works, follow this structured appro
 
 ## Steps
 
-1. **Identify the framework and tech stack** — Read `package.json`, config files, and the project structure
-2. **Map the architecture** — Identify the routing pattern, state management, and data flow
-3. **Walk through each major feature** — For each page/feature, explain:
+1. **Identify the framework and tech stack**  Read `package.json`, config files, and the project structure
+2. **Draw a diagram**: Use ASCII art to show the flow, structure or relationships
+3. **Map the architecture**  Identify the routing pattern, state management, and data flow
+4. **Walk through each major feature**  For each page/feature, explain:
    - What component renders it
    - What data it uses
    - How state flows in and out
-4. **Explain the data model** — Types, interfaces, and how data is structured
-5. **Describe the user journey** — Walk through the app as a user would experience it
-6. **Highlight patterns and decisions** — Why was it built this way? What patterns are used?
+5. **Explain the data model** Types, interfaces, and how data is structured
+6. **Describe the user journey** Walk through the app as a user would experience it
+7. **Highlight patterns and decisions** Why was it built this way? What patterns are used?
 
 ## Output Format
 
 Use clear headings, code references with file paths, and a logical flow from high-level architecture down to implementation details.
 ```
+### Step 3: Use the Skill
+
+Lets now prompt claude again this time with the skill 
+```bash
+Use explain-code skill and show me how this app works
+```
+
+<img width="908" height="614" alt="image" src="https://github.com/user-attachments/assets/6b048722-02a4-4e60-8642-69ab877e4fea" />
+
+
 **Response:** A very detailed response. This is how you can craft a strong prompt and use a skill to ensure to ensure that the agent always responds this way. Just like training an employee to become a master Cafe owner.
