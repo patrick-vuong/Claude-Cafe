@@ -12,8 +12,9 @@ Welcome to **Claude Café** ! A cozy, AI-themed digital coffee shop in the AI ec
 Claude Café has been quite busy and you can't run this place alone. You need to **hire an agent**
 
 <div align="center">
-  <img width="323" height="323" alt="image" src="https://github.com/user-attachments/assets/d8ab3e62-f90f-4e31-a29b-c4f32ab8ad35" />
+  <img width="323" height="323" alt="image" src="https://github.com/user-attachments/assets/cb51fbc0-c948-41f2-9a72-23c8b957d22f" />
 </div>
+
 
 Good news! you've found one. Meet Claude!  Claude is smart, fast, and ready to work. However Claude is a new hire. It's capable, but it doesn't know your café or our workflows yet. It doesn't know your menu, your workflow, your standards, or how you like things done.
 That's where **Claude Skills** come in.
@@ -29,3 +30,44 @@ Agents are great out of the box. Claude can read code, answer questions, and gen
 **Example**: Imagine asking a new barista to "make a latte." They will make a latte but is it your latte? With the right foam ratio, the right temperature, served in your branded cup? 
 
 ---
+## Setup: Preparing for Agent Training
+•	Install [Node.JS](https://nodejs.org/en/download) 
+
+•	Install [Git](https://git-scm.com/) 
+
+•	Install [GitHub Desktop](https://desktop.github.com/download/)
+
+•	GitHub Account:  Creating an account on [GitHub](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) 
+
+### VS Code + Claude Code Setup
+•	Install VS Code: [Download Visual Studio Code - Mac, Linux, Windows](https://code.visualstudio.com/download)
+
+•	Install Claude Code in CLI Quickstart - [Claude Code Docs (macOS, Linux, WSL, Windows PowerShell, Windows CMD](https://code.claude.com/docs/en/quickstart)
+
+•	Install [Claude Code for VS Code Extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
+
+•	Claude Subscription [(Pro, Max, Teams, or Enterprise)](https://claude.com/pricing) 
+
+### Clone and Open Claude Cafe Repo in VS Code
+•	Open Command Palette: CTRL+Shift+P (Windows/Linux) or CMD+Shift+P (macOS) 
+<img width="481" height="66" alt="image" src="https://github.com/user-attachments/assets/fb8eef37-5a0c-4877-9143-e56408c94d82" />
+
+
+•	Type Git: Clone and paste the repo [https://github.com/patrick-vuong/Claude-Agent-Cafe.git](https://github.com/patrick-vuong/Claude-Cafe.git)
+```bash
+https://github.com/patrick-vuong/Claude-Cafe.git
+```
+
+•	Select a local directory to save | Optional: npm install in terminal to download dependencies to run app
+
+•	Click on Terminal -> New Terminal: claude
+```bash
+claude
+```
+<img width="975" height="294" alt="image" src="https://github.com/user-attachments/assets/4025dd31-7696-448e-aa05-1349454966ed" />
+
+<img width="1392" height="265" alt="image" src="https://github.com/user-attachments/assets/cb08e15e-117e-4ed3-90a2-6f9049d03033" />
+
+
+---
+
