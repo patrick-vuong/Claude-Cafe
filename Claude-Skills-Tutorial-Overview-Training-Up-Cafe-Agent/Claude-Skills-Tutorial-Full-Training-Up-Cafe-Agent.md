@@ -161,12 +161,12 @@ Use explain-code skill and show me how this app works
 
 ---
 
-# Module 2: Cooking in the Kitchen | Model Context Protocal Tools
+# Module 2: Cooking in the Kitchen | Model Context Protocol Tools
 ## A great cafe has a great Kitchen and recipes
-### The Kitchen (Model Context Protocal) & Recipe (Skills) Analogy 
+### The Kitchen (Model Context Protocol) & Recipe (Skills) Analogy 
 We treat Claude Code like a **AI teammate** as we have gone from pair programming to peer programming. What makes a productive is software development lifecycle are the developer tools  that help us go about different tasks ex. testing with (Playwright tool)[https://playwright.dev/]. 
 
-Agents like Claude are extensible as we can connect tools for Claude to use via **Model Context Protocal (MCP)**. **MCP** is a open standard that allows Claude to leverage tools to gain new capabilities.
+Agents like Claude are extensible as we can connect tools for Claude to use via **Model Context Protocol (MCP)**. **MCP** is a open standard that allows Claude to leverage tools to gain new capabilities.
 
 ### **Imagine this:** Similar in our analogy of Claude Cafe - Claude needs great tools in the kitchen to achieve tasks for the cafe
 •	**Kitchen Tools**: is our MCP where Claude can connect to different tools and complete agentic workflows
