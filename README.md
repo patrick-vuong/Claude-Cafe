@@ -43,11 +43,12 @@ We treat Claude Code like a **AI teammate** as we have gone from pair programmin
 ---
 **Imagine this:** Similar in our analogy of Claude Cafe - Claude needs great tools in the kitchen to achieve tasks for the cafe
 
-**Kitchen Tools**: is our MCP where Claude can connect to different tools and complete agentic workflows
+**Kitchen Tools | MCP**: is our MCP where Claude can connect to different tools and complete agentic workflows
 
-**Recipes**: is our skills that teach Claude workflows and best practices 
+**Recipes | Skills**: is our skills that teach Claude workflows and best practices 
 
-**The Result: Claude with a Kitchen (MCP) and Recipes (skills)** allows Claude to perform agentic workflows in the way you would do it and adhering all the best practices
+**Result: Smooth Efficient Kitchen** Claude can perform agentic workflows with the tools that are right for the job and in the way you would do it and adhering all the best practices. 
+
 ---
 ### Progressive Learning: 
 In the tutorial we go through these stages building on each other.
