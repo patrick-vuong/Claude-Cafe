@@ -191,6 +191,9 @@ to engage with the Anthropic universe while exploring a beautifully crafted caf�
           │ tokens   │          │ via Prisma   │  │  order!" │
           └──────────┘          └──────────────┘  └──────────┘
 ```
+Client state (cart, wallet) lives in React Context + localStorage — no auth needed
+Server state (menu items, orders, stock) lives in Supabase PostgreSQL, accessed only through Server Actions via Prisma
+Tokens are purely cosmetic (100 tokens ~ $1.00) — no real payment processing
 
 ## Getting Started
 
